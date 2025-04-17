@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const carouselImages = [
@@ -66,12 +67,12 @@ const HomePage = () => {
               complex concepts simple and fun. We focus on clarity, confidence,
               and results—delivering excellence one student at a time.
             </p>
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="inline-block mt-4 text-indigo-600 hover:text-indigo-800 font-medium transition"
             >
               Learn more →
-            </a>
+            </Link>
           </div>
 
           {/* Image Side */}
@@ -97,12 +98,12 @@ const HomePage = () => {
                 <strong className="text-indigo-700">Reach out to us now!</strong>
               </p>
             </div>
-            <a
-              href="/batch"
+            <Link
+              to="/batch"
               className="inline-block mt-4 bg-indigo-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-700 transition"
             >
               Learn More
-            </a>
+            </Link>
           </div>
 
           {/* 9th Grade Batch */}
@@ -116,12 +117,12 @@ const HomePage = () => {
                 <strong className="text-indigo-700">Reach out to us now!</strong>
               </p>
             </div>
-            <a
-              href="/batch"
+            <Link
+              to="/batch"
               className="inline-block mt-4 bg-indigo-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-700 transition"
             >
               Learn More
-            </a>
+            </Link>
           </div>
 
           {/* 10th Grade Batch */}
@@ -135,12 +136,12 @@ const HomePage = () => {
                 <strong className="text-indigo-700">Reach out to us now!</strong>
               </p>
             </div>
-            <a
-              href="/batch"
+            <Link
+              to="/batch"
               className="inline-block mt-4 bg-indigo-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-700 transition"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </div>

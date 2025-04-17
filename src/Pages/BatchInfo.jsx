@@ -95,12 +95,12 @@ export default function BatchInfo() {
       <div className="mt-12 text-center">
         <p className="text-lg font-medium">
           Need to hear from our previous students?{" "}
-          <a
-            href="/about#reviews"
+          <Link
+            to="/about#reviews"
             className="text-indigo-700 font-semibold underline hover:text-indigo-900 transition"
           >
             Click here!
-          </a>
+          </Link>
         </p>
       </div>
     </div>
