@@ -1,6 +1,5 @@
 // src/pages/AboutPage.jsx
 import React from "react";
-import Slider from "react-slick";
 import { motion } from "framer-motion";
 
 const AboutPage = () => {
@@ -155,100 +154,6 @@ const AboutPage = () => {
             </p>
           </div>
         </motion.div>
-
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-2xl font-semibold text-center text-indigo-600 mt-16 mb-8"
-        >
-          What Students Say
-        </motion.h2>
-
-        <motion.section
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.9, delay: 0.8 }}
-          className="max-w-6xl mx-auto px-4"
-        >
-          <Slider
-            dots={false}
-            infinite
-            speed={1000}
-            slidesToShow={3}
-            slidesToScroll={1}
-            autoplay
-            autoplaySpeed={3000}
-            cssEase="linear"
-            responsive={[
-              {
-                breakpoint: 1024,
-                settings: { slidesToShow: 2 },
-              },
-              {
-                breakpoint: 640,
-                settings: { slidesToShow: 1 },
-              },
-            ]}
-          >
-            {[
-              {
-                avatar: "/avatars/img_2.jpg",
-                name: "Anjali Mehta",
-                rating: 5,
-                review:
-                  "Racky Sir's explanations are so clear that even tough concepts feel simple. The way he breaks things down makes studying enjoyable and effective. I gained so much confidence before boards!",
-              },
-              {
-                avatar: "/avatars/img_1.jpg",
-                name: "Rajiv Sharma",
-                rating: 4,
-                review:
-                  "Interactive classes and regular practice helped me a lot. Every doubt was solved with patience and clarity. I really recommend this coaching to anyone struggling with Science or Maths.",
-              },
-              {
-                avatar: "/avatars/img_3.jpg",
-                name: "Arjun Dev Singla",
-                rating: 5,
-                review:
-                  "One of the best coaching experiences! I finally started enjoying Maths. Racky Sir's method is clear, practical, and friendly. Highly recommend for 8th to 10th students!",
-              },
-              {
-                avatar: "/avatars/img_4.jpg",
-                name: "Pooja Nair",
-                rating: 5,
-                review:
-                  "One of the best coaching experiences! I finally started enjoying Maths. Racky Sir's method is clear, practical, and friendly. Highly recommend for 8th to 10th students!",
-              },
-            ].map((student, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.2 }}
-                className="px-2"
-              >
-                <div className="bg-indigo-50 shadow-lg rounded-2xl p-6 h-[320px] flex flex-col items-center text-center overflow-hidden">
-                  <img
-                    src={student.avatar}
-                    alt={student.name}
-                    className="w-20 h-20 object-cover rounded-full mb-4 border-2 border-indigo-500"
-                  />
-                  <h3 className="text-lg font-semibold text-indigo-700">
-                    {student.name}
-                  </h3>
-                  <div className="text-yellow-400 text-xl mt-1 mb-2">
-                    {"⭐".repeat(student.rating)}
-                  </div>
-                  <p className="text-gray-600 text-sm line-clamp-4">
-                    {student.review}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </Slider>
-        </motion.section>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

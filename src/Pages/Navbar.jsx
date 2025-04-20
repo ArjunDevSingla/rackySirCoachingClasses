@@ -56,6 +56,9 @@ export default function Navbar() {
           <li>
             <Link to="/contact" className="hover:text-indigo-900 transition duration-200">Contact Us</Link>
           </li>
+          <li>
+            <Link to="/review" className="hover:text-indigo-900 transition duration-200">Review Us</Link>
+          </li>
         </ul>
 
         {/* Mobile Menu Icon */}
@@ -86,6 +89,9 @@ export default function Navbar() {
               </li>
               <li onClick={toggleMenu}>
                 <Link to="/contact" className="hover:text-indigo-900 transition duration-200">Contact Us</Link>
+              </li>
+              <li onClick={toggleMenu}>
+                <Link to="/review" className="hover:text-indigo-900 transition duration-200">Review Us</Link>
               </li>
             </ul>
           </motion.div>
